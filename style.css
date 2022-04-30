@@ -14,8 +14,10 @@
 
 body {
     font-family: "Vazir" !important;
-    height: 200vh;
+    height: 500vh;
 }
+
+
 
 /* header */
 
@@ -76,8 +78,8 @@ header nav ul li a:hover {
 
 #open-sidebar {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     color: #fff;
     font-size: 30px;
     display: none;
@@ -89,38 +91,23 @@ header nav ul li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* slider */
 
 
 .slider {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 }
 
 .under-slider {
-    margin: -60px auto 0;
+    margin: -80px auto 0;
     white-space: nowrap;
     z-index: 1;
 
 }
 
-.slideshow-container{
+.slideshow-container {
     width: auto;
     height: auto;
     position: relative;
@@ -169,7 +156,7 @@ header nav ul li a:hover {
 .next {
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
 
 .prev:hover,
 .next:hover {
@@ -177,25 +164,105 @@ header nav ul li a:hover {
 }
 
 .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+/* intro-text */
+
+
+.intro-text {
+    margin: 5rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-text-content {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 7rem;
+    text-align: center;
+}
+
+.intro-text-content p {
+    font-size: 20px;
+}
 
 
 
 
 
+/* new-product */
+
+.new-product{
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+}
+
+.new-product-title{
+    margin-bottom: 50px;
+}
+
+.new-product-title h3{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.new-product-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 23px;
+    flex-wrap: wrap;
+}
 
 
+.product-box{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
 
+.product-box:hover{
+    transform: scale(1.05);
+}
+.product-box:hover span{
+    color: red;
+    
+}
 
+.product-box h2{
+    font-weight: 500;
+}
 
-
-
-
-
-
-
+.product-box span{
+    padding-top: 50px;
+    transition: all 0.25s ease-in-out;
+}
 
 
 
@@ -211,6 +278,7 @@ header nav ul li a:hover {
 
 @media screen and (max-width:1200px) {
 
+    /* header */
 
     #nav {
         position: fixed;
@@ -272,26 +340,45 @@ header nav ul li a:hover {
 
     .under-slider {
         white-space: normal;
-      }
+    }
 
 
     .under-slider {
         display: inline-table;
         white-space: normal;
-      }
-    
-      .under-slider {
-      margin: auto;
     }
 
-   
+    .under-slider {
+        margin: auto;
+    }
+
+
+    /* intro-text */
+
+
+    .intro-text {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /* new-product */
+
+
+    .new-product-content{
+        justify-content: space-evenly;
+    }
+
+
 
 }
 
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:576px) {
 
     #nav {
         width: 256px;
@@ -311,8 +398,34 @@ header nav ul li a:hover {
 
     /* slider */
 
+    .slider {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+
     .dot {
         width: 105px;
         height: 69.5px;
+    }
+
+
+    /* intro-text */
+
+
+    .intro-text {
+        margin: 1rem 0;
+    }
+
+    .intro-text .intro-text-content {
+        width: 300px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    .intro-text-content p {
+        font-size: 15px;
     }
 }
