@@ -37,7 +37,7 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 header nav a {
@@ -441,22 +441,3 @@ header nav ul li a:hover {
     }
 }
 
-
-
-@media screen and (max-height:500px){
-
-
-    header nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-right: 50px;
-        height: 117%;
-    }
-
-    header nav ul li {
-        margin-top: 10px;
-    }
-}
