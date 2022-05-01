@@ -290,6 +290,10 @@ header nav ul li a:hover {
         transform: translateX(100%);
         transition: all 0.3s ease-in-out;
     }
+    
+    #nav::-webkit-scrollbar {
+        display: none;
+      }
 
     #nav.active {
         transform: translateX(0);
