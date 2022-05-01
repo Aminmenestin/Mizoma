@@ -58,6 +58,7 @@ header nav ul li {
     width: 40%;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 
@@ -68,6 +69,7 @@ header nav ul li a {
     padding: 10px;
     border-radius: 15px;
     transition: all 0.2s ease-in-out;
+    
 }
 
 
@@ -399,7 +401,7 @@ header nav ul li a:hover {
 
 
     header nav ul li {
-        margin-top: 1px;
+        margin-top: 10px;
     }
 
 
@@ -436,5 +438,25 @@ header nav ul li a:hover {
 
     .intro-text-content p {
         font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-height:500px){
+
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 50px;
+        height: 117%;
+    }
+
+    header nav ul li {
+        margin-top: 10px;
     }
 }
