@@ -447,7 +447,7 @@ header nav ul li a:hover {
     /* header */
 
     #nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 350px;
