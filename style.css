@@ -39,11 +39,10 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
-
-header nav a {
-    cursor: pointer;
+header nav a img{
+    display: none;
 }
 
 header nav ul {
@@ -134,7 +133,7 @@ header nav ul li a:hover {
     background-color: #bbb;
     display: inline-block;
     transition: background-color 0.6s ease;
-    transition: all 0.2s;
+    transition: all 0.3s;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -585,7 +584,7 @@ header nav ul li a:hover {
 
 .box-text span{
     float: right;
-    padding: 0 20px;
+    padding: 10px 20px;
     font-size: 14px;
     color: #6B7C93;
 }
@@ -593,29 +592,6 @@ header nav ul li a:hover {
 .blog-box:hover .box-text p{
     color: #fe4a1b;;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -637,6 +613,7 @@ header nav ul li a:hover {
         width: 350px;
         height: 100vh;
         background: rgba(0, 0, 0, 0.6);
+        -webkit-backdrop-filter: blur(0.6rem);
         backdrop-filter: blur(0.6rem);
         z-index: 3;
         transform: translateX(100%);
@@ -653,9 +630,11 @@ header nav ul li a:hover {
     }
 
     header nav a img {
+        display: block;
         position: absolute;
-        top: 10px;
+        top: 41px;
         right: 10px;
+        width: 150px;
     }
 
     header nav ul {
@@ -914,20 +893,6 @@ header nav ul li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:768px) {
     /* change-page */
 
@@ -1034,23 +999,6 @@ header nav ul li a:hover {
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
