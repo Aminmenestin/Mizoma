@@ -793,6 +793,11 @@ header nav ul li a:hover {
 
     /* product */
 
+    .product-title h3 {
+        font-size: 20px
+    }
+    
+    
     .product-img {
         height: 180px !important;
         width: 180px !important;
