@@ -15,7 +15,7 @@
 
 body {
     font-family: "Vazir" !important;
-/*     height: 1500vh; */
+    height: 1500vh;
 }
 
 
@@ -483,14 +483,6 @@ header nav ul li a:hover {
     align-items: center;
 }
 
-/* .stand-content .stand-image{
-    width: 50%;
-}
-
-.stand-content .stand-image img{
-    width: 80%;
-} */
-
 
 .stand-content .stand-text {
     padding: 0 30px;
@@ -525,6 +517,88 @@ header nav ul li a:hover {
 .stand-content .stand-text a:hover {
     opacity: 0.85;
 }
+
+
+/* blog */
+
+
+#blog{
+    max-width: 1500px;
+    display: flex;
+    margin: 5rem auto;
+}
+
+.blog{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.blog a{
+    text-decoration: none;
+    color: #000;
+}
+
+.blog-title{
+    margin-bottom: 90px;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.blog-box{
+    position: relative;
+    cursor: pointer;
+    margin-top: -45px;
+}
+
+.box-image{
+    z-index: 20;
+}
+
+.box-text{
+    background-color: #fff;
+    position: relative;
+    width: 345px;
+    height: 100px;
+    z-index: 30;
+    top: -70px;
+    right: 5px;
+    box-shadow: 0 10px 30px rgb(50 50 93 / 12%), 0 -1px 4px rgb(0 0 0 / 6%);
+}
+
+.box-text p{
+    text-align: right;
+    padding: 10px 20px;
+    font-weight: bold;
+    line-height: 160%;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.box-text span{
+    float: right;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #6B7C93;
+}
+
+.blog-box:hover .box-text p{
+    color: #fe4a1b;;
+}
+
+
+
+
+
+
 
 
 
@@ -803,6 +877,31 @@ header nav ul li a:hover {
     }
 
 
+    /* blog */
+
+    .blog-title{
+        margin-bottom: 5px;
+    }
+    
+    
+    .blog-box{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .box-image img{
+        width: 90%;
+        padding: 0 20px;
+    }
+    
+    .box-text{
+        top: 15px;
+        right: 5%;
+        box-shadow: none;
+    }
+    
+
+
 }
 
 
@@ -931,6 +1030,8 @@ header nav ul li a:hover {
         margin-top: 2rem;
     }
 
+
+    
 
 }
 
@@ -1097,5 +1198,7 @@ header nav ul li a:hover {
     .stand-content {
         width: 350px;
     }
+
+
 
 }
