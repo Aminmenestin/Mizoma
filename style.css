@@ -28,7 +28,6 @@ header {
     justify-content: center;
     position: absolute;
     z-index: 99999;
-
 }
 
 .container {
@@ -40,6 +39,7 @@ header nav {
     display: flex;
     align-items: center;
     padding: 20px 20px;
+    position: relative;
 }
 
 header nav a img {
@@ -57,10 +57,9 @@ header nav ul {
 
 header nav ul li {
     display: flex;
-    width: 40%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-
+    margin-right: 30px;
 }
 
 
@@ -68,7 +67,7 @@ header nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 15px;
     transition: all 0.2s ease-in-out;
 
@@ -77,6 +76,21 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: var(--color-primary, #fe4a1b);
+}
+
+
+.search-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.basket-shopping {
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 
@@ -730,13 +744,13 @@ header nav ul li a:hover {
         width: 90%;
         height: 65px;
         display: flex;
-        /* justify-content: center; */
         flex-direction: row-reverse;
         align-items: center;
         transform: translateX(-100%);
         opacity: 0.8;
         transition: all 0.5s ease-in-out;
         border-radius: 15px;
+        z-index: 1080;
     }
 
     
@@ -751,7 +765,6 @@ header nav ul li a:hover {
         color: #fff;
         border-radius: 10px;
         font-family: "Vazir" !important;
-        outline: none;
     }
 
     
