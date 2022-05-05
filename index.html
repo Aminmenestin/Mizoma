@@ -31,13 +31,20 @@
                         <li><a href="#">طراحی</a></li>
                         <li><a href="#">مشارکت</a></li>
                         <li><a href="#">تماس با ما</a></li>
-                        <li><a href="#">عضویت</a></li>
-                        <li><a href="#">وارد شوید</a></li>
-                        <li>
-                            <i class="search-icon fas fa-search"></i>
+                        <li class="not-display"><a href="#">عضویت</a></li>
+                        <li class="not-display"><a href="#">وارد شوید</a></li>
+                        <li class="not-display">
+                            <i onclick="open_search_bar()" class="search-icon fas fa-search"></i>
                             <i class="basket-shopping fa-solid fa-basket-shopping"></i>
                         </li>
                     </ul>
+                    <i onclick="close_sidebar()" id="close-sidebar" class="fa-solid fa-x"></i>
+                    <div class="open-search1 not-display">
+                        <button disabled class="btn">جستجو</button>
+                        <input class="open_search_input1" type="text" placeholder="نام محصول یا دسته ..."
+                            maxlength="20">
+                        <i onclick="close_search_bar()" id="close-search" class="fa-solid fa-x"></i>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -50,8 +57,8 @@
             <i class="basket-shopping fa-solid fa-basket-shopping"></i>
         </div>
         <div class="open-search">
-            <button disabled  class="btn">جستجو</button>
-            <input class="open_search_input" type="search" placeholder="نام محصول یا دسته ..." maxlength="20">
+            <button disabled class="btn">جستجو</button>
+            <input class="open_search_input" type="text" placeholder="نام محصول یا دسته ..." maxlength="20">
             <i onclick="close_search_bar()" id="close-search" class="fa-solid fa-x"></i>
         </div>
     </div>
@@ -491,10 +498,10 @@
         </div>
     </section>
 
-   
 
-    
-    
+
+
+
 
 
     <script src="all.min.js"></script>

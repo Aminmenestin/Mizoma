@@ -43,6 +43,7 @@ function open_sidebar() {
   nav.classList.add('active');
   if (open_search.classList.contains('active')) {
     open_search.classList.remove('active');
+    open_search1.classList.remove('active');
   }
 }
 function close_sidebar() {
@@ -54,9 +55,14 @@ function close_sidebar() {
 
 
 const open_search = document.querySelector('.open-search');
+const open_search1 = document.querySelector('.open-search1');
+const open_search_input1 = document.querySelector('.open_search_input1');
 
 function open_search_bar() {
   open_search.classList.add('active');
+  open_search1.classList.add('active');
+  open_search_input1.focus()
+  // open_search_input.focus()
   if (nav.classList.contains('active')) {
     nav.classList.remove('active');
   }
@@ -64,6 +70,7 @@ function open_search_bar() {
 
 function close_search_bar() {
   open_search.classList.remove('active');
+  open_search1.classList.remove('active');
 }
 
 
@@ -80,6 +87,22 @@ open_search_input.addEventListener('keyup', function (e) {
     open_search_button.removeAttribute('disabled');
     open_search_button.style.background = '#fe4a1b';
     open_search_button.classList.add('active');
+  }
+})
+
+
+const open_search_button1 = open_search1.firstElementChild;
+
+open_search_input1.addEventListener('keyup', function (e) {
+  if(e.target.value==''){
+    open_search_button1.setAttribute('disabled','disabled');
+    open_search_button1.style.background = '#fff';
+    open_search_button1.classList.remove('active');
+  }
+  else{
+    open_search_button1.removeAttribute('disabled');
+    open_search_button1.style.background = '#fe4a1b';
+    open_search_button1.classList.add('active');
   }
 })
 

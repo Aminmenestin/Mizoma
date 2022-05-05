@@ -40,6 +40,7 @@ header nav {
     align-items: center;
     padding: 20px 20px;
     position: relative;
+    z-index: 100;
 }
 
 header nav a img {
@@ -49,7 +50,7 @@ header nav a img {
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     margin-right: 50px;
@@ -57,7 +58,7 @@ header nav ul {
 
 header nav ul li {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-right: 30px;
 }
@@ -86,12 +87,85 @@ header nav ul li a:hover {
     margin-top: 2px;
 }
 
+
 .basket-shopping {
     color: #fff;
     margin-right: 20px;
     cursor: pointer;
     font-size: 20px;
 }
+
+/* open-search */
+
+.open-search1 {
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 38%;
+    height: 50px;
+    display: flex;
+    opacity: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 15px;
+    z-index: -1000;
+}
+
+.open-search1.active{
+    opacity: 1;
+    z-index: 9999999;
+}
+
+
+.open-search1 input{
+    background-color: #fff;
+    width: 90%;
+    height: 50px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    border-radius: 10px;
+    font-family: "Vazir" !important;
+}
+
+
+
+.open-search1 .btn {
+    padding: 20px 15px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    font-family: "Vazir" !important;
+    border: none;
+    font-size: 17px;
+    cursor: not-allowed;
+}
+
+.open-search1 .btn.active{
+    cursor: pointer;
+    color: #fff;
+}
+
+.open-search1 .btn.active:hover{
+    opacity: 0.8;
+}
+
+#close-search{
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
 
 
 #open-sidebar {
@@ -619,6 +693,33 @@ header nav ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1200px) {
 
     /* header */
@@ -662,8 +763,17 @@ header nav ul li a:hover {
         right: -150px;
     }
 
+
     header nav ul li {
         margin-top: 2rem;
+        display: flex;
+        width: 40%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .not-display{
+        display: none;
     }
 
     #open-sidebar {
@@ -737,9 +847,11 @@ header nav ul li a:hover {
 
     /* open-search */
 
+
     .open-search {
         background-color: #0C0C15;
         position: absolute;
+        top: 0;
         left: 0;
         width: 90%;
         height: 65px;
@@ -765,6 +877,7 @@ header nav ul li a:hover {
         color: #fff;
         border-radius: 10px;
         font-family: "Vazir" !important;
+        overflow: auto;
     }
 
     
@@ -997,6 +1110,45 @@ header nav ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:768px) {
     /* change-page */
 
@@ -1103,6 +1255,39 @@ header nav ul li a:hover {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
