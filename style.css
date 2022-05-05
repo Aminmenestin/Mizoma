@@ -41,7 +41,8 @@ header nav {
     align-items: center;
     padding: 20px 20px;
 }
-header nav a img{
+
+header nav a img {
     display: none;
 }
 
@@ -81,7 +82,7 @@ header nav ul li a:hover {
 
 #open-sidebar {
     position: absolute;
-    top: 10px;
+    top: 17px;
     right: 10px;
     color: #000;
     font-size: 30px;
@@ -97,6 +98,7 @@ header nav ul li a:hover {
 
 .header-black-background {
     display: none;
+    overflow: hidden;
 }
 
 
@@ -521,28 +523,28 @@ header nav ul li a:hover {
 /* blog */
 
 
-#blog{
+#blog {
     max-width: 1500px;
     display: flex;
     margin: 5rem auto;
 }
 
-.blog{
+.blog {
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-.blog a{
+.blog a {
     text-decoration: none;
     color: #000;
 }
 
-.blog-title{
+.blog-title {
     margin-bottom: 90px;
 }
 
-.blog-content{
+.blog-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -551,17 +553,17 @@ header nav ul li a:hover {
 }
 
 
-.blog-box{
+.blog-box {
     position: relative;
     cursor: pointer;
     margin-top: -45px;
 }
 
-.box-image{
+.box-image {
     z-index: 20;
 }
 
-.box-text{
+.box-text {
     background-color: #fff;
     position: relative;
     width: 345px;
@@ -572,7 +574,7 @@ header nav ul li a:hover {
     box-shadow: 0 10px 30px rgb(50 50 93 / 12%), 0 -1px 4px rgb(0 0 0 / 6%);
 }
 
-.box-text p{
+.box-text p {
     text-align: right;
     padding: 10px 20px;
     font-weight: bold;
@@ -582,15 +584,16 @@ header nav ul li a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.box-text span{
+.box-text span {
     float: right;
     padding: 0 20px;
     font-size: 14px;
     color: #6B7C93;
 }
 
-.blog-box:hover .box-text p{
-    color: #fe4a1b;;
+.blog-box:hover .box-text p {
+    color: #fe4a1b;
+    ;
 }
 
 
@@ -632,16 +635,16 @@ header nav ul li a:hover {
     header nav a img {
         display: block;
         position: absolute;
-        top: 13px;
-        right: 10px;
-        width: 150px;
+        top: 25px;
+        right: 18px;
+        width: 110px;
     }
 
     header nav ul {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 45px;
+        top: 60px;
         right: -150px;
     }
 
@@ -657,12 +660,12 @@ header nav ul li a:hover {
 
     #close-sidebar {
         position: absolute;
-        top: 12px;
+        top: 23px;
         left: 40px;
         z-index: 40;
         display: block;
         color: #fff;
-        font-size: 30px;
+        font-size: 23px;
         cursor: pointer;
     }
 
@@ -676,12 +679,13 @@ header nav ul li a:hover {
 
     .header-black-background {
         width: 100%;
-        height: 50px;
+        height: 65px;
         background-color: #000;
         display: block;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     .header-black-background a {
@@ -715,6 +719,86 @@ header nav ul li a:hover {
         font-size: 20px;
         margin-top: 2px;
     }
+
+
+    /* open-search */
+
+    .open-search {
+        background-color: #0C0C15;
+        position: absolute;
+        left: 0;
+        width: 90%;
+        height: 65px;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: row-reverse;
+        align-items: center;
+        transform: translateX(-100%);
+        opacity: 0.8;
+        transition: all 0.5s ease-in-out;
+        border-radius: 15px;
+    }
+
+    
+    .open-search input{
+        background-color: #0C0C15;
+        width: 90%;
+        height: 60px;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 10px;
+        font-family: "Vazir" !important;
+    }
+
+    
+
+    .open-search .btn {
+        padding: 20px 15px;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        border-radius: 5px;
+        background-color:#fff;
+        font-family: "Vazir" !important;
+        border: none;
+        font-size: 17px;
+        cursor: not-allowed;
+    }
+
+    .open-search .btn.active{
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .open-search .btn.active:hover{
+        opacity: 0.8;
+    }
+
+
+
+
+
+    #close-search{
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+
+    .open-search.active{
+       transform: translateX(1%);
+       opacity: 1;
+    }
+
+    
+
 
 
     /* slider */
@@ -858,33 +942,33 @@ header nav ul li a:hover {
 
     /* blog */
 
-    .blog-title{
+    .blog-title {
         margin-bottom: 5px;
     }
-    
-    
-    .blog-box{
+
+
+    .blog-box {
         width: 100%;
         margin-top: 50px;
     }
 
-    
-    
-    .box-image img{
+
+
+    .box-image img {
         width: 90%;
         padding: 0 20px;
     }
-    
-    .box-text{
+
+    .box-text {
         top: 15px;
         right: 5%;
         box-shadow: none;
     }
 
-    .box-text p{
+    .box-text p {
         height: 65px;
     }
-    
+
 
 
 }
@@ -1002,7 +1086,7 @@ header nav ul li a:hover {
     }
 
 
-    
+
 
 }
 
@@ -1029,9 +1113,9 @@ header nav ul li a:hover {
     }
 
 
-    /* header nav ul li {
-        margin-top: 15px;
-    } */
+    header nav ul li {
+        margin-top: 20px;
+    }
 
 
 
@@ -1155,7 +1239,13 @@ header nav ul li a:hover {
 
 
 
+    .open-search {
+        width: 85%;
+    }
+
+
+    .open-search input{
+        font-size: 15px;
+    }
+
 }
-
-
-
