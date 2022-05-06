@@ -760,7 +760,7 @@ header nav ul li a:hover {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: -150px;
+        right: -175px;
     }
 
 
@@ -1308,7 +1308,7 @@ header nav ul li a:hover {
     }
 
     header nav ul {
-        right: -135px;
+        right: -150px;
     }
 
 
