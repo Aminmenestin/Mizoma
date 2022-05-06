@@ -15,7 +15,7 @@
 
 body {
     font-family: "Vazir" !important;
-    height: 1500vh;
+    /* height: 100vh; */
 }
 
 
@@ -31,7 +31,7 @@ header {
 }
 
 .container {
-    width: 1200px;
+    width: 1400px;
 }
 
 
@@ -50,7 +50,7 @@ header nav a img {
 header nav ul {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin-right: 50px;
@@ -58,9 +58,10 @@ header nav ul {
 
 header nav ul li {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    margin-right: 30px;
+    width: 90%;
+    /* margin-right: 50px; */
 }
 
 
@@ -85,14 +86,24 @@ header nav ul li a:hover {
     cursor: pointer;
     font-size: 20px;
     margin-top: 2px;
+    transition: all 0.1s ease-in-out;
+}
+
+.search-icon:hover{
+    opacity: 0.8;
 }
 
 
 .basket-shopping {
     color: #fff;
-    margin-right: 20px;
+    margin-right: 30px;
     cursor: pointer;
     font-size: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.basket-shopping:hover{
+    opacity: 0.8;
 }
 
 /* open-search */
