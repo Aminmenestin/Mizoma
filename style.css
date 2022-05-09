@@ -416,10 +416,10 @@ header nav ul li a:hover {
     display: flex;
     visibility: visible;
     margin-bottom: 9px;
-    -webkit-animation: fadein 0.3s;
-    animation: fadein 0.3s;
+    -webkit-animation: fadein 0.4s;
+    animation: fadein 0.4s;
     width: 300px;
-    height: 300px;
+    height: 299px;
     transform: scale(1);
 }
 
