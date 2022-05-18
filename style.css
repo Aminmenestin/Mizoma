@@ -1280,6 +1280,10 @@ header nav ul li a:hover {
 
     /* next-page */
 
+    .all-images{
+        height: auto;
+    }
+    
     .change-page-content .next-page p {
         left: 25px;
     }
